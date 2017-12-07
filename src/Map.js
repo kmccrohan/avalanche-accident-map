@@ -12,9 +12,10 @@ class Map extends React.Component {
   render() {
     const markerList = accidents.map(accident => (
       <Marker
-        lat={parseFloat(accident.LAT)}
-        lng={parseFloat(accident.LON)}
-        key={accident.LAT}
+        lat={accident.LAT}
+        lng={accident.LON}
+        key={accident.id}
+        accident={accident}
       />
     ));
     return (
