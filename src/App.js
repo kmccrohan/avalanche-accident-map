@@ -9,7 +9,9 @@ class App extends Component {
         <div className="header">
           <h1> Avalanche Accidents in US 2012-2017 </h1>
         </div>
-        <Map />
+        <div className="map">
+          <Map />
+        </div>
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
-
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+import Marker from "./Marker";
+import accidents from "./accidents.json";
 
 class Map extends React.Component {
   static defaultProps = {
@@ -10,12 +10,19 @@ class Map extends React.Component {
   };
 
   render() {
+    const markerList = accidents.map(accident => (
+      <Marker
+        lat={parseFloat(accident.LAT)}
+        lng={parseFloat(accident.LON)}
+        key={accident.LAT}
+      />
+    ));
     return (
       <GoogleMapReact
         bootstrapURLKeys={{ key: "AIzaSyAaebRzCMkKy3XlLSuOBZ_sd1AO05o0WDk" }}
         defaultCenter={this.props.center}
         defaultZoom={this.props.zoom}>
-        <AnyReactComponent lat={40} lng={-110} text={"Kreyser Avrora"} />
+        {markerList}
       </GoogleMapReact>
     );
   }

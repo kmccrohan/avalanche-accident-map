@@ -1,0 +1,8 @@
+.Marker {
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: red;
+  border: 2px solid red;
+  opacity: 0.3;
+}

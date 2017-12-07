@@ -1,13 +1,23 @@
 .App {
   text-align: center;
   height: 100%;
+  flex-flow: column;
 }
 
-.App-header {
+.map {
+  overflow: auto;
+  height: 100%;
+  flex: 1 1 auto;
+}
+
+.header {
   background-color: #222;
   height: 70px;
-  padding: 20px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: white;
+  flex: 0 1 auto;
 }
 
 .App-title {
