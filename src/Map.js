@@ -19,9 +19,9 @@ class Map extends React.Component {
     this.setState({ selectedAccident: accident });
   };
 
-  // onBoundsChange = (center, zoom, bounds, marginBounds) => {
-  //   this.setState({ selectedAccident: accident });
-  // };
+  onCloseReport = () => {
+    this.setState({ selectedAccident: null });
+  };
 
   render() {
     const markerList = accidents.map(accident => (
@@ -36,7 +36,14 @@ class Map extends React.Component {
     let report = null;
     if (this.state.selectedAccident) {
       const acc = this.state.selectedAccident;
-      report = <Report accident={acc} lat={acc.LAT} lng={acc.LON} />;
+      report = (
+        <Report
+          accident={acc}
+          lat={acc.LAT}
+          lng={acc.LON}
+          onClose={this.onCloseReport}
+        />
+      );
     }
     return (
       <GoogleMapReact
