@@ -1,7 +1,7 @@
 import csv
 import json
 
-csvfile = open('AvalancheDeaths.csv', 'r')
+csvfile = open('accidents.csv', 'r')
 jsonfile = open('accidents.json', 'w')
 
 fieldnames = ("Avalanche Year","YYYY","MM","DD","Place","Setting","State","LAT","LON","Primary Activity","Travel Mode","deaths","notes")
