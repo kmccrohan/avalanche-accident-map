@@ -11,7 +11,7 @@ npm install
 yarn
 ```
 
-Now, you should be able to launch the app.
+Now, you should be able to launch the app. Open your browser at `localhost:3000`.
 ```
 npm run start
 yarn start
