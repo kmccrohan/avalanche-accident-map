@@ -4,11 +4,12 @@
   "private": true,
   "dependencies": {
     "google-map-react": "^0.25.0",
+    "now": "^8.5.4",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-popup": "^0.8.0",
-    "react-scripts": "1.0.17"
+    "react-scripts": "^1.0.17"
   },
   "scripts": {
     "start": "react-scripts start",

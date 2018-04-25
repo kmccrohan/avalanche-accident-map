@@ -1,6 +1,8 @@
 # avalanche-accident-map
 A web app containing an interactive map displaying avalanche accidents in the US.
 
+Check it out [here](https://avalanche-accident-map-lypmbnrovg.now.sh/)!
+
 Data is obtained from the [Colorado Avalanche Information Center](http://avalanche.state.co.us/accidents/statistics-and-reporting/).
 
 # Getting Started
@@ -35,3 +37,4 @@ The key technologies used in this app are:
 - [react](https://reactjs.org/): A JS component library that helps you build modular web apps.
 - [Google Map React](https://github.com/istarkov/google-map-react): This library wraps the Google Maps API for react.
 - [react-popup](https://github.com/minutemailer/react-popup): A simple react popup library.
+- [now.sh](https://zeit.co/now): real time deployment and hosting.
